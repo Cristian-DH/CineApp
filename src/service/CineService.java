@@ -93,10 +93,10 @@ public class CineService {
             System.out.println("Seleccione cliente:"); // Solicita selección
 
             for (int i = 0; i < clientes.size(); i++) { // Recorre clientes
-                System.out.println(i + ") " + clientes.get(i).getNombre()); // Muestra índice y nombre
+                System.out.println((i+1) + ") " + clientes.get(i).getNombre()); // Muestra índice y nombre
             }
 
-            c = InputUtil.leerInt("Ingrese opción: "); // Lee el índice ingresado
+            c = InputUtil.leerInt("Ingrese opción: ")-1; // Lee el índice ingresado
 
             if (c < 0 || c >= clientes.size()) { // Valida si está fuera de rango
                 System.out.println("Cliente inválido"); // Mensaje de error
@@ -164,10 +164,10 @@ public class CineService {
             System.out.println("Seleccione cliente:"); // Solicita cliente
 
             for (int i = 0; i < clientes.size(); i++) { // Recorre clientes
-                System.out.println(i + ") " + clientes.get(i).getNombre()); // Muestra nombres
+                System.out.println((i+1) + ") " + clientes.get(i).getNombre()); // Muestra nombres
             }
 
-            c = InputUtil.leerInt("Ingrese opción: "); // Lee índice
+            c = InputUtil.leerInt("Ingrese opción: ")-1; // Lee índice
 
             if (c < 0 || c >= clientes.size()) { // Valida rango
                 System.out.println("Cliente inválido"); // Mensaje error

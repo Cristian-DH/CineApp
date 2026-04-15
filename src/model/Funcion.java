@@ -96,17 +96,17 @@ public class Funcion {
         System.out.println("Capacidad sala: " + capacidadSala);
         System.out.println("Entradas vendidas: " + getEntradasVendidas());
         System.out.println("Asientos disponibles: " + getAsientosDisponibles());
+
     }
 
     @Override
     public String toString() {
-        return "Funcion{" +
-                "pelicula='" + pelicula.getTitulo() + '\'' +
-                ", duracion=" + pelicula.getDuracion() + " min" +
-                ", horario='" + horario + '\'' +
-                ", capacidadSala=" + capacidadSala +
-                ", entradasVendidas=" + getEntradasVendidas() +
-                ", asientosDisponibles=" + getAsientosDisponibles() +
-                '}';
+        return "Funcion:" +
+                "\npelicula: " + pelicula.getTitulo() +
+                "\nduracion: " + pelicula.getDuracion() + " min" +
+                "\nhorario: " + horario +
+                "\ncapacidadSala: " + capacidadSala +
+                "\nentradasVendidas: " + getEntradasVendidas() +
+                "\nasientosDisponibles: " + getAsientosDisponibles();
     }
 }
