@@ -90,7 +90,8 @@ public class Funcion {
 
     public void mostrarInformacion() {
         System.out.println("=== FUNCION ===");
-        System.out.println("Pelicula: " + pelicula);
+        System.out.println("Pelicula: " + pelicula.getTitulo());
+        System.out.println("Duracion: " + pelicula.getDuracion() + " min");
         System.out.println("Horario: " + horario);
         System.out.println("Capacidad sala: " + capacidadSala);
         System.out.println("Entradas vendidas: " + getEntradasVendidas());
@@ -100,7 +101,8 @@ public class Funcion {
     @Override
     public String toString() {
         return "Funcion{" +
-                "pelicula=" + pelicula +
+                "pelicula='" + pelicula.getTitulo() + '\'' +
+                ", duracion=" + pelicula.getDuracion() + " min" +
                 ", horario='" + horario + '\'' +
                 ", capacidadSala=" + capacidadSala +
                 ", entradasVendidas=" + getEntradasVendidas() +
